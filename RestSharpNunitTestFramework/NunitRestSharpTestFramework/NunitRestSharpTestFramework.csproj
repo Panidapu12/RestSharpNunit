@@ -82,7 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestData\" />
-    <Folder Include="TestExecutionReports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestExecutionReports\TetExecutionReport_20170906_024018.html" />
+    <Content Include="TestExecutionReports\TetExecutionReport_20170906_024301.html" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
