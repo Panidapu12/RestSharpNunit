@@ -63,18 +63,24 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DataModelClasses\Comments.cs" />
+    <Compile Include="DataModelClasses\Photos.cs" />
+    <Compile Include="DataModelClasses\Posts.cs" />
+    <Compile Include="Library\RestSharpSupportingClass.cs" />
+    <Compile Include="TestScripts\PhotoTestCases.cs" />
+    <Compile Include="TestScripts\PostTestCases.cs" />
     <Compile Include="SetUpClasses\BaseSetupClass.cs" />
     <Compile Include="ReportingClasses\ExtentManager.cs" />
     <Compile Include="SetUpClasses\TestCaseConfiguration.cs" />
-    <Compile Include="TestScripts\UnitTest1.cs" />
+    <Compile Include="TestScripts\CommentsTestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestScripts\responseStatusValidationTestCases.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="TestCaseConfiguration\TestCaseConfiguration.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Library\" />
     <Folder Include="TestData\" />
     <Folder Include="TestExecutionReports\" />
   </ItemGroup>

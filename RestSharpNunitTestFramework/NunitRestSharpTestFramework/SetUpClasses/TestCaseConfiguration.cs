@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
-using System.Linq;
+
 
 namespace NunitRestSharpTestFramework
 {
@@ -30,10 +30,10 @@ namespace NunitRestSharpTestFramework
                     TestCaseData testCaseData = new TestCaseData();
                     if (dataReader.Read())
                     {
-                        testCaseData.testCaseName = dataReader[0]!=DBNull.Value?"Yes":"NA";
-                        testCaseData.executeValue = dataReader[1]!=DBNull.Value?"Yes":"NA";
-                        testCaseData.environment =  dataReader[2]!=DBNull.Value?"Yes":"NA";
-                        testCaseData.uri = dataReader[3]!=DBNull.Value?"Yes":"NA";
+                        testCaseData.testCaseName = dataReader[0]!=DBNull.Value? dataReader[0].ToString() :"NA";
+                        testCaseData.executeValue = dataReader[1]!=DBNull.Value?dataReader[1].ToString():"NA";
+                        testCaseData.environment =  dataReader[2]!=DBNull.Value?dataReader[2].ToString():"NA";
+                        testCaseData.uri = dataReader[3]!=DBNull.Value?dataReader[3].ToString():"NA";
                         readList.Add(testCaseData);
                         return readList;
                     }
